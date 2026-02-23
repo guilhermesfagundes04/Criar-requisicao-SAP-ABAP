@@ -1,0 +1,17 @@
+MODULE pbo_0200 OUTPUT.
+
+  SET PF-STATUS 'S_0200'.
+  SET TITLEBAR  'T_0200'.
+  PERFORM zf_exibir_tela_log.
+
+
+ENDMODULE.
+
+MODULE pai_0200 INPUT.
+
+  CASE sy-ucomm.
+    WHEN 'BACK' OR 'EXIT' OR 'CANCEL'.
+      LEAVE TO SCREEN 00.
+  ENDCASE.
+
+ENDMODULE.

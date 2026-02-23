@@ -1,0 +1,6 @@
+PROCESS BEFORE OUTPUT.
+  MODULE pbo_0100.
+  MODULE exibir_tela_alv.
+*
+PROCESS AFTER INPUT.
+  MODULE pai_0100.
