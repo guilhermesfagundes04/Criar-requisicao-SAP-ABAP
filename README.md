@@ -23,4 +23,15 @@ Criação de requisição via BAPI.
     * Todas as regras existentes no ZR<iniciais>_SBUPDATE_REQ são válidas.
     * Adicionar novo botão na barra de ferramentas: “Nova Requisição”. Adicionar ícone “ICON_CREATE” no botão.
         * Este botão, irá abrir uma nova tela, no formato Popup, que terá os campos: Material, Quantidade e Centro.
-        * Ao confirmar, deverá executar a função ZFM<iniciais>_SBCREATE_REQ, exibindo uma mensagem com o resultado, fechar o popup e atualizar o ALV. 
+        * Ao confirmar, deverá executar a função ZFM<iniciais>_SBCREATE_REQ, exibindo uma mensagem com o resultado, fechar o popup e atualizar o ALV.
+
+
+
+**Novo exercício**
+
+**Objetivo**
+Alterar programa que cria requisição, para implementar a lógica das classes de logs.
+
+**Desenvolvimento**
+* Implementar classe desenvolvida para gravar os logs gerados no log padrão. 
+* Adicionar botão no ALV, para exibir os logs, dos últimos 30 dias, das requisições selecionadas. 
