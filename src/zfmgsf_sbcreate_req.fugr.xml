@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de função para criar requisição</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFMGSF_SBCREATE_REQTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFMGSF_SBCREATE_REQ</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFMGSF_SBCREATE_REQ</FUNCNAME>
+     <SHORT_TEXT>Função de criação de requisições</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ID_MATNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EBAN-MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_MENGE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EBAN-MENGE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_WERKS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EBAN-WERKS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ED_RESULTADO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ED_MENSAGEM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR200</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ED_BANFN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EBAN-BANFN</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ID_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº do material</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_MENGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Quantidade da requisição de compra</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Centro</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ED_RESULTADO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Resultado</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ED_MENSAGEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mensagem</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ED_BANFN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº requisição de compra</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
